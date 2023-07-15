@@ -14,7 +14,7 @@ use App\Http\Controllers\people_Controller;
 | be assigned to the "api" middleware group. Make something great!
 |
 */
-Route::get('okojew/53639/show/', [people_Controller::class, 'all']);
+Route::get('okojew/53639/show', [people_Controller::class, 'all']);
 Route::get('okojew/53639/show/{id}', [people_Controller::class, 'index']);
 Route::put('okojew/53639/update/{id}', [people_Controller::class, 'update']);
 Route::post('okojew/53639/create', [people_Controller::class, 'create']);

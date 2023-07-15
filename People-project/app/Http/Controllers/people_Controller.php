@@ -11,7 +11,7 @@ class people_Controller extends Controller
     public function all(){
         return response()->json(people_model::all());
     }
-    public function creare(Request $request)
+    public function create(Request $request)
     {
         $res= people_model::create($request->all());
         return response()->json($res,201);
